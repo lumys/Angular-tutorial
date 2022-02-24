@@ -1,0 +1,10 @@
+<!-- 변수 값의 뒤에 | uppercase 와 같은 파이프를 통해 문자열의 형식을 지정하거나, 날짜나 데이터가 표시되는 형식을 지정 가능.-->
+<h2>{{hero.name | uppercase}} Details</h2>
+<div><span>id: </span>{{hero.id}}</div>
+<div><span>name: </span>{{hero.name}}</div>
+
+<!-- 양방향 바인딩을 통한 실시간 데이터 변경하기 -->
+<div>
+  <label for="name">Hero name: </label>
+  <input id="name" [(ngModel)]="hero.name" placeholder="name">
+</div>
